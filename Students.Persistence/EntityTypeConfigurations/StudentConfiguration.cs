@@ -4,7 +4,7 @@ using Students.Domain;
 
 namespace Students.Persistence.EntityTypeConfigurations
 {
-    internal class StudentConfiguration : IEntityTypeConfiguration<Student>
+    public class StudentConfiguration : IEntityTypeConfiguration<Student>
     {
         public void Configure(EntityTypeBuilder<Student> builder)
         {
