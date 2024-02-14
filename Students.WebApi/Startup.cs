@@ -9,6 +9,7 @@ using Students.Application;
 using System.Reflection;
 using Students.Application.Common.Mappings;
 using Students.Persistence;
+using Students.WebApi.Middleware;
 
 namespace Students.WebApi
 {
@@ -47,6 +48,7 @@ namespace Students.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCustomExceptionHandler();
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");
