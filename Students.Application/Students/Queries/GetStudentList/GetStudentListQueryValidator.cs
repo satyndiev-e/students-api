@@ -7,7 +7,7 @@ namespace Students.Application.Students.Queries.GetStudentList
     {
         public GetStudentListQueryValidator() 
         {
-            RuleFor(x => x.Id).NotEqual(null);
+            RuleFor(x => x.Id).NotEmpty();
         }
     }
 }

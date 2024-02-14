@@ -7,7 +7,7 @@ namespace Students.Application.Students.Commands.DeleteCommand
     {
         public DeleteStudentCommandValidator()
         {
-            RuleFor(deleteStudentCommand => deleteStudentCommand.Id).NotEqual(null);
+            RuleFor(deleteStudentCommand => deleteStudentCommand.Id).NotEmpty();
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Students.Application.Students.Commands.UpdateStudent
             entity.FirstName =request.FirstName;
             entity.LastName =request.LastName;
             entity.DateOfBirth =request.DateOfBirth;
-            entity.GenderId = request.GenderId;
+            //entity.GenderId = request.GenderId;
 
             await _dbContext.SaveChangesAsync(cancellationToken);
 

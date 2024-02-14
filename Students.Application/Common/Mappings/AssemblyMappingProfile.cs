@@ -22,6 +22,7 @@ namespace Students.Application.Common.Mappings
             {
                 var instance = Activator.CreateInstance(type);
                 var methodInfo = type.GetMethod("Mapping");
+                methodInfo?.Invoke(instance, new object[] { this });
             }
         }
     }

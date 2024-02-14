@@ -7,7 +7,7 @@ namespace Students.Application.Students.Commands.UpdateStudent
     {
         public UpdateStudentCommandValidator() 
         {
-            RuleFor(updateStudentCommand => updateStudentCommand.Id).NotEqual(null);
+            RuleFor(updateStudentCommand => updateStudentCommand.Id).NotEmpty();
             RuleFor(updateStudentCommand => updateStudentCommand.FirstName)
                 .NotEmpty().MaximumLength(100);
             RuleFor(updateStudentCommand => updateStudentCommand.LastName)
